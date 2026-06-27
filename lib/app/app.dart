@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'theme.dart';
+
 class SWCompanionApp extends StatelessWidget {
   const SWCompanionApp({super.key});
 
@@ -8,16 +10,7 @@ class SWCompanionApp extends StatelessWidget {
     return MaterialApp(
       title: 'SW Companion Pro',
       debugShowCheckedModeBanner: false,
-
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF00C2FF),
-          brightness: Brightness.dark,
-        ),
-      ),
-
+      theme: AppTheme.darkTheme,
       home: const Scaffold(
         body: Center(
           child: Text(
